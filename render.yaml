@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pokemon-showdown
+    env: node
+    buildCommand: npm install && node build
+    startCommand: node pokemon-showdown
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
